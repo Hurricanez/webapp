@@ -1,0 +1,45 @@
+<link rel="import" href="../libs/polymer/polymer.html"> </link>
+<link rel="import" href="../libs/iron-pages/iron-pages.html"> </link>
+<link rel="import" href="../libs/progress-bubble/progress-bubble/progress-bubble.html"></link>
+
+
+<dom-module id="gn-trafficrelforecast">
+
+
+
+
+	<template>
+
+
+		<!-- local DOM for your element -->
+
+		<div>{{greeting}}</div> <!-- data bindings in local DOM -->
+		<progress-bubble value={{value}} max={{max}}><img src="../signs/50.png" height={{percentage}} width={{percentage}}></progress-bubble>
+	</template>
+
+	<script>
+		// element registration
+		Polymer({
+			is: "gn-trafficrelforecast",
+
+			// add properties and methods on the element's prototype
+
+			properties: {
+				// declare properties for the element's public API
+				value: {
+					type: String,
+					value: "8"
+				},
+				max: {
+					type: String,
+					value: "10"
+				},
+				percentage: {
+					type: String,
+					value: "90"
+				}
+			}
+		});
+	</script>
+
+</dom-module>

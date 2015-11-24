@@ -1,5 +1,5 @@
-<link rel="import" href="../libs/polymer/polymer.html"></link>
-<link rel="import" href="../libs/iron-pages/iron-pages.html"></link>
+<link rel="import" href="../libs/polymer/polymer.html"> </link>
+<link rel="import" href="../libs/iron-pages/iron-pages.html"> </link>
 
 <dom-module id="gn-directions">
 <style>
@@ -30,14 +30,14 @@ img {
 		<ul>
 			<template is="dom-repeat" items="[[route]]" filter="isTurn">
 				<li style$="[[item.style]]" on-click="causeFire">
-					<img src="[[image(item.turn)]]"></img>
+					<img src="[[image(item.turn)]]"> </img>
 					<span>[[item.street]]</span>
 				</li>
 			</template>
 		</ul>
 		
 		<div class="highlighted-directions">
-			<img style="width:150px; height:150px;" src="[[image(next.turn)]]"></img>
+			<img style="width:150px; height:150px;" src="[[image(next.turn)]]"> </img>
 			<p style="font-size:150%;">[[next.street]]</p>
 		</div>
 	</iron-pages>
